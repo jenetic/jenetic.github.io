@@ -12,4 +12,4 @@ function typeEffect(content, speed) {
 }
 
 // Execute Functions
-typeEffect("Hi! I'm Jenny.", 120);
+typeEffect("Hi! I'm Jenny.", 120); 
