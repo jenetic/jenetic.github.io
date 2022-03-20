@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4NP995VNP"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N4NP995VNP');
+        </script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Source+Serif+Pro:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+        
+
+        <!-- Required meta tags for Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        
+        <!-- CSS, Bootstrap, Font Awesome -->
+        <link href='css/main.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/f2d3412016.js" crossorigin="anonymous"></script>
+
+        <title>Jenny L.</title>
+    </head>
+    <body>
+        <!-- Bootstrap Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!-- Nagivation Bar -->
+        <div>
+            <nav class="navbar fixed-top navbar-expand-sm navbar-light navbar-background-color">
+                <a href="#" class="navbar-brand" style="padding-left: 15px; color: #F15555;">
+                    <img src="img/logo.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-top" /> 
+                </a>
+    
+                <!-- Navbar Toggler -->
+                <button 
+                    class="navbar-toggler"
+                    style="border: none; box-shadow: none;" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-lable="Toggle Nagivation"
+                >
+                    <!-- Hamburger menu  -->
+                    <span>
+                        <i class="fas fa-bars" style="color: #fff4f0"></i>
+                    </span>
+                </button>
+                
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse" id="navbarMenu" style="padding-right: 15px;">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item grow">
+                            <a href="#about" class="nav-link" style="color: #fff4f0;">About</a>
+                        </li>
+                        <li class="nav-item grow">
+                            <a href="#education" class="nav-link" style="color: #fff4f0;">Education</a>
+                        </li>
+                        <li class="nav-item grow">
+                            <a href="#experience" class="nav-link" style="color: #fff4f0;">Experience</a>
+                        </li>
+                        <li class="nav-item grow"> 
+                            <a href="#projects" class="nav-link" style="color: #fff4f0;">Projects</a>
+                        </li>
+                        <!-- <li class="nav-item grow"> 
+                            <a href="#" class="nav-link" style="color: #fff4f0;">Resume</a>
+                        </li> -->
+                        <li class="nav-item grow">
+                            <a href="#contact" class="nav-link" style="color: #fff4f0;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- About -->      
+        <section id="about">
+            <div class="section-heading" id="intro-name">
+                <h1 id="name" style="font-size: 74px"></h1>
+            </div>  
+            <div class="row">
+                <div class="col-sm-6"> 
+                    <p>I'm a student studying math and computer science at UC San Diego. I'm looking for internships in software engineering and machine learning to further my knowledge in computer science and math, as well as make a tangible impact!</p>
+                    <p>I'm currently a research intern at Hannah Carter's bioinformatics lab at UCSD and Lisa Stower's neuroscience lab at Scripps Research. I love to explore the connection between computer science and biology because I believe in the power of technology to help us understand our own living systems, as well as improve the quality of life.</p>
+
+                </div>
+                <div class="col-sm-6 center-block">
+                    <img src="img/portrait.png" alt="Portrait" style="width:100%; height:auto;"/>
+                    <figcaption>Reach out to me <a class="custom-link" href="#contact">here</a>!</figcaption> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <div class="container text-center section-heading">
+                <h1 class="h1-dark">my education</h1>
+            </div>
+            <div>
+                <h4 class="h4-dark">UC San Diego, B.S. Mathematics-Computer Science</h4>
+                <p class="p-dark" style="color: #485a9c;"><b>2021-2025</b></p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5 class="h5-dark"><b>Relevant Courses</b></h5>
+                        <p>
+                            <ul class="ul-dark">
+                                <li><b>CSE 11</b>: Accelerated Intro to Programming</li>
+                                <li><b>MATH 20C</b>: Multivariable Calculus and Analytic Geometry</li>
+                                <li><b>MATH 20D</b>: Intro to Differential Equations</li>
+                                <li><b>MATH 18</b>: Linear Algebra</li>
+                                <li><b>PHYS 87</b>: Intro to LaTeX</li>
+                            </ul>
+                            <h5 class="h5-dark"><b>San Jose City College (Dual Enrollment)</b></h5>
+                            <ul class="ul-dark">
+                                <li><b>MATH 63</b>: Elementary Statistics</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5 class="h5-dark"><b>Activities and Societies</b></h5>
+                        <p>
+                            <ul class="ul-dark">
+                                <li><a class="custom-link" href="https://wic.ucsd.edu/" target="_blank">Women in Computing</a></li>
+                                <li>Team Member, <a class="custom-link" href="https://ai.acmucsd.com/" target="_blank">Association for Computing Machinery (ACM) AI</a> Projects Fall 2021</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="light">
+            <div class="container text-center section-heading">
+                <h1>what i've done</h1>
+            </div>
+            
+            <section class="experience-section" id="scripps">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4>UCSD School of Medicine</h4>
+                        <p><b>Nov 2021 - now</b></p>
+                    
+                    </div>
+                    <div class="col-sm-9">
+                        <h5 style="font-family: 'Source Serif Pro', serif;">Research Intern</h5>
+                        <p>I'm working on developing and implementing variational autoencoder neural 
+                            network models using Pytorch to denoise high dimensional genetic data at the Hannah Carter lab. 
+                        </p>
+                        <p>More details coming soon!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience-section" id="scripps">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4>Scripps Research</h4>
+                        <p><b>Nov 2021 - now</b></p>
+                    
+                    </div>
+                    <div class="col-sm-9">
+                        <h5 style="font-family: 'Source Serif Pro', serif;">Research Intern</h5>
+                        <p>
+                            Currently, I'm a neuroscience research intern at the Stowers Lab carrying out experiments related to mice behavior.
+                        </p>
+                        <p>More details coming soon!</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="experience-section" id="stanford">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4>Stanford University</h4>
+                        <p><b>Jun 2021 - Aug 2021</b></p>
+                    
+                    </div>
+                    <div class="col-sm-9">
+                        <h5 style="font-family: 'Source Serif Pro', serif;">Research Intern</h5>
+                        <p>
+                            As a research intern at Stanford's summer internship  
+                            program, I worked with two other individuals under the guidance of HoJoon Lee Ph.D to 
+                            create a comphrensive k-mer index of all possible SARS-CoV-2 
+                            substitution mutations using Python to allow for easy lookup of mutations. I also analyzed COVID-19 
+                            mutation data to identify patterns and trends in its variants 
+                            of concerns. We wrote and published our findings in the 
+                            <i>Informaticists</i> journal.
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="experience-section" id="aasm">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4>American Academy of Sleep Medicine</h4>
+                        <p><b>Apr 2019</b></p>
+                    
+                    </div>
+                    <div class="col-sm-9">
+                        <h5 style="font-family: 'Source Serif Pro', serif;">1st Place Winner, Video Contest</h5>
+                        <p>
+                            For this contest, I researched, filmed, and edited a video about the science 
+                            and importance of sleep to promote healthy sleep habits. My video was 
+                            selected by a board of physicians to win $1,000 as 1st place.
+                        </p>
+                        <p>
+                            <a class="custom-button" href="https://www.youtube.com/watch?v=MKRNUi3E88k&t" target="_blank">Video</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container text-center section-heading">
+                <h1 class="h1-dark">my projects</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <figure class="project">
+                        <img class="project-img mx-auto d-block" src="img/project_daily_dollars.png">
+                        <figcaption class="project-caption">
+                            <h4>UCSD Daily Dollars</h4>
+                            <p>
+                                <b>Javascript | HTML | CSS</b>
+                            </br>
+                                Tool that calculates the recommended daily spending of
+                                UCSD dining dollars for rest of school year based on holiday breaks,
+                                weekends, and extra days. Click
+                            </br>
+                            <a class="custom-link" href="https://srnq.github.io/daily-dollars/" target="_blank">here</a>
+                                to try it out!
+                            </p>
+                            <a class="custom-button mx-auto d-block" href="https://github.com/srnq/daily-dollars" target="_blank">Repo</a>
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+                <div class="col-sm-4">
+                    <figure class="project">
+                        <img class="project-img mx-auto d-block" src="img/logo.png">
+                        <figcaption class="project-caption">
+                            <h4>Portfolio Website</h4>
+                            <p>
+                                <b>Javascript | HTML | CSS</b>
+                            </br>
+                                This website! Check out the Github repo:
+                            </p>
+                            <a class="custom-button mx-auto d-block" href="https://github.com/srnq/srnq.github.io" target="_blank">Repo</a>
+                        </figcaption>
+                    </figure>
+                    
+                </div>
+                <div class="col-sm-4" style="align-items: center;">
+                    <figure class="project">
+                        <img class="project-img mx-auto d-block" src="img/project_fb_msg_stats.png">
+                        
+                        <figcaption class="project-caption">
+                            <h4>Facebook Messenger Stats</h4>
+                            <p>
+                                <b>Python</b>
+                            </br>
+                                Command-line tool that extracts and displays basic statistics of your Facebook Messenger chats.
+                            </p>
+                            <a class="custom-button mx-auto d-block" href="https://github.com/srnq/fb-messenger-stats" target="_blank">Repo</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>   
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container text-center section-heading">
+                <h1>where to find me</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul style="list-style-type:none">
+                            <li class="contact-list-with-icon">
+                                <i class="fas fa-envelope fa-2x"></i>
+                                <a class="contact-list" href="mailto:j9lam@ucsd.edu" target="_blank"  style="font-size: 20px;">j9lam@ucsd.edu</a>
+                            </li>
+                            <li class="contact-list-with-icon">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                                <a class="contact-list" href="https://www.linkedin.com/in/jwny" target="_blank" style="font-size: 20px;">Jenny L.</a>
+                            </li>
+                            <li class="contact-list-with-icon">
+                                <i class="fab fa-github fa-2x" ></i>
+                                <a class="contact-list" href="https://github.com/srnq" target="_blank" style="font-size: 20px;">srnq</a>
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
