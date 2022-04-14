@@ -160,10 +160,6 @@ i {
   margin: 0.3rem;
 }
 
-.education {
-  background: ;
-}
-
 .education .boxes {
   display: grid;
   grid-template: 20% auto / 50% 50%;
