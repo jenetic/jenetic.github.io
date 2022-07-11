@@ -19,17 +19,26 @@
   <script src="https://kit.fontawesome.com/f2d3412016.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
   
-  <title>Jenny L.</title>
+  <title>Jenny Lam</title>
 </head>
 <body>
   <aside>
     <div class="sidebar">
       <img class="portrait" src="img/portrait.png"/> 
       <div class="sidebar-bio">
-        <h2>Jenny L.</h2>
+        <h2>Jenny Lam</h2>
         <p>UC San Diego</px>
         <p>B.S. Mathematics—Computer Science</p>
-        </div>
+      </div>
+      <!-- <div class="table-of-contents">
+        <h3>Nagivate to</h3>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#name">About</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+        </ul>
+      </div> -->
       <div class="contact">
         <h3>Where to Find Me</h3>
         <ul class="contact-list">
@@ -44,9 +53,11 @@
     <div class="name-container">
       <h1 class="hidden">.</h1><h1 id="name"></h1>
     </div>
-    <div class="about">
+    <div id="about" class="about">
       <p>
-        I’m a student at UC San Diego studying math and computer science, as well as a computational research intern at Scripps Research. I'm currently seeking internship opportunities in software engineering and/or web development. Feel free to reach out to me if you ever want to chat. I'd love to make a new friend and expand my network! 
+        I'm a second-year student at UC San Diego studying math and computer science.
+        I'm also a software engineer intern at General Atomics, a computational research intern at Scripps Research,
+        and probably sleep deprived. I'm interested in web development and software engineering :)
       </p>
       <h3 id="languages-header">Languages:</h3>
       <div id="languages-content" class="skills">  
@@ -61,43 +72,32 @@
       <div id="tools-content" class="skills">  
         <p class="tag">React.js</p>
         <p class="tag">Node.js</p>
+        <p class="tag">Express.js</p>
         <p class="tag">Firebase</p>
         <p class="tag">Pandas</p>
         <p class="tag">Matplotlib</p>
         <p class="tag">PyTorch</p>
         <p class="tag">Git</p>
-        <p class="tag">Figma</p>
       </div>
 
     </div>
-    <div class="education">
-      <h2>Education</h2>
-      <div class="boxes">
-        <div class="top-box">
-          <h3>University of California San Diego, 2021-2025</h3>
-          <p class="major">B.S. Mathematics—Computer Science</p>
-        </div>
-        <div class="box">
-          <p>Relevant Coursework</p>
-          <ul>
-            <li class="first">Data Structures and Algorithms</li>
-            <li>Software Tools and Techniques Lab</li>
-            <li>Object Oriented Programming (Java)</li>
-            <li class="last">Mathematical Proof / Reasoning </li>
-          </ul>
-        </div>
-        <div class="box">
-          <p>Activities and Societies</p>
-          <ul>
-            <li class="first">First-Year Experience Committee Board Member, Women in Computing</li>
-            <li class="last">AI Project Member, Association for Computing Machinery (ACM) AI</li>
-          </ul>
-        </div>
-      </div>
-   </div>
-   <div class="experience">
+   <div id="experience" class="experience">
       <h2>Experience</h2>
       <div class="boxes">
+        <div class="box">
+          <div class="header">
+            <p class="position">Software Engineer Intern @ General Atomics</p>
+            <p class="date">Jun 2022 - Present</p>
+          </div>
+          <div class="tech-used">
+            <p class="tag">Python</p>
+            <p class="tag">Pandas</p>
+            <p class="tag">PyTorch</p>
+          </div>
+          <p>
+            I'm currently working on an ML project under the AI & Autonomy Department. Details coming soon!
+          </p>
+        </div>
         <div class="box">
           <div class="header">
             <p class="position">Computational Research Intern @ Scripps Research</p>
@@ -122,12 +122,12 @@
             <p class="tag">Matplotlib</p>
           </div>
           <p>
-            As a research intern at Stanford's summer internship program, I worked with two other interns to create a comprehensive k-mer index (mutation table) of all possible substitution mutations of the COVID-19 virus using Python to allow for efficient and easy lookup of mutations. I also analyzed 2.5+ million cases of COVID-19 using Python, identifying several patterns and trends in its variants of concerns. 
+            I worked with two other interns to create a comprehensive k-mer index (mutation table) of all possible substitution mutations of the COVID-19 virus using Python to allow for efficient and easy lookup of mutations. I also analyzed 2.5+ million cases of COVID-19 using Python, identifying several patterns and trends in its variants of concerns. 
           </p>
         </div>
       </div>
    </div>
-   <div class="projects">
+   <div id="projects" class="projects">
     <h2>Projects</h2>
     <div class="boxes">
       <a class="box" href="https://github.com/srnq/studybudz" target="_blank">
@@ -167,6 +167,32 @@
       </a>
     </div>
    </div>
+   <div id="education" class="education">
+    <h2>Education</h2>
+    <div class="boxes">
+      <div class="top-box">
+        <h3>University of California San Diego, 2021-2025</h3>
+        <p class="major">B.S. Mathematics—Computer Science</p>
+      </div>
+      <div class="box">
+        <p>Relevant Coursework</p>
+        <ul>
+          <li class="first">Data Structures and Algorithms</li>
+          <li>Software Tools and Techniques</li>
+          <li>Object Oriented Programming (Java)</li>
+          <li class="last">Mathematical Proof / Reasoning </li>
+        </ul>
+      </div>
+      <div class="box">
+        <p>Activities and Societies</p>
+        <ul>
+          <li class="first">Web Developer, Association for Computing Machinery (ACM) AI</li>
+          <li >First-Year Events Committee Board Member, Women in Computing</li>
+          <li class="last">AI Project Member, ACM AI</li>
+        </ul>
+      </div>
+    </div>
+ </div>
   </main>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
