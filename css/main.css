@@ -264,13 +264,32 @@ i {
   background: var(--bg3);
 }
 
+.projects .tech-used {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.projects .desc {
+  width: 100%;
+}
+
+.projects .tag {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.projects img {
+  height: 100px;
+  width: 100px;
+}
+
 @media (min-width: 1024px) {
   body {
     margin: 0rem 18%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   
   html, body {
     display: flex;
