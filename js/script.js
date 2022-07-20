@@ -10,14 +10,32 @@ const typeEffect = (content, speed) => {
       }
   }, speed)
 }
-typeEffect("Hi! I'm Jenny.", 120); 
 
 // Dark mode toggle
-const toggleColorScheme = () => {
+const toggleColorScheme = (load=false) => {
   let body = document.body;
-  if (body.className === "dark") {
-    body.className = "light";
+  let button = document.getElementById("toggle-color-scheme");
+
+  if (load) {
+    if (localStorage.getItem("color-scheme") === null) {
+      localStorage.setItem("color-scheme", "light");
+      button.textContent = "Toggle Dark Mode";
+    } else {
+      if (localStorage.getItem("color-scheme") === "dark") {
+        button.textContent = "Toggle Light Mode";
+      }
+    }
   } else {
-    body.className = "dark";
+    if (body.className === "dark") {
+      localStorage.setItem("color-scheme", "light");
+      button.textContent = "Toggle Dark Mode";
+    } else {
+      localStorage.setItem("color-scheme", "dark");
+      button.textContent = "Toggle Light Mode";
+    }
   }
+  body.className = localStorage.getItem("color-scheme");
 }
+
+typeEffect("Hi! I'm Jenny.", 120); 
+toggleColorScheme(true);
