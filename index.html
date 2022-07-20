@@ -21,44 +21,48 @@
   
   <title>Jenny Lam</title>
 </head>
-<body>
+<body class="light">
   <aside>
-    <div class="sidebar">
-      <img class="portrait" src="img/portrait.png"/> 
-      <div class="sidebar-bio">
-        <h2>Jenny Lam</h2>
-        <p>UC San Diego</px>
-        <p>B.S. Mathematics—Computer Science</p>
+    <div id="sidebar">
+      <div id="container-for-small-screen">
+        <img id="portrait" src="img/portrait.png"/> 
+        <div id="sidebar-bio">
+          <h2>Jenny Lam</h2>
+          <p>Math/CS at UCSD</p>
+        </div>
+        <!-- <div class="table-of-contents">
+          <h3>Nagivate to</h3>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#name">About</a></li>
+            <li class="nav-item"><a href="#experience">Experience</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#education">Education</a></li>
+          </ul>
+        </div> -->
+        <div id="contact">
+          <h3>Where to Find Me</h3>
+          <ul id="contact-list">
+            <li class="contact-item"><a href="mailto:j9lam@ucsd.edu" target="_blank"><i class="fas fa-envelope"></i>j9lam@ucsd.edu</a></li>
+            <li class="contact-item"><a href="https://www.linkedin.com/in/jwny" target="_blank"><i class="fab fa-linkedin-in"></i>Jenny L.</a></li>
+            <li class="contact-item"><a href="https://github.com/jenetic" target="_blank"><i class="fab fa-github"></i>jenetic</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- <div class="table-of-contents">
-        <h3>Nagivate to</h3>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#name">About</a></li>
-          <li class="nav-item"><a href="#experience">Experience</a></li>
-          <li class="nav-item"><a href="#projects">Projects</a></li>
-          <li class="nav-item"><a href="#education">Education</a></li>
-        </ul>
-      </div> -->
-      <div class="contact">
-        <h3>Where to Find Me</h3>
-        <ul class="contact-list">
-          <li class="contact-item"><a href="mailto:j9lam@ucsd.edu" target="_blank"><i class="fas fa-envelope"></i>j9lam@ucsd.edu</a></li>
-          <li class="contact-item"><a href="https://www.linkedin.com/in/jwny" target="_blank"><i class="fab fa-linkedin-in"></i>Jenny L.</a></li>
-          <li class="contact-item"><a href="https://github.com/jenetic" target="_blank"><i class="fab fa-github"></i>jenetic</a></li>
-        </ul>
+      <div id="toggle-color-scheme-container">
+        <button id="toggle-color-scheme" onclick="toggleColorScheme()">Dark Mode</button>
       </div>
     </div>
   </aside>
   <main>
-    <div class="name-container">
-      <h1 class="hidden">.</h1><h1 id="name"></h1>
+    <div id="name-container">
+      <h1 id="name"></h1><h1 id="hidden">.</h1>
     </div>
-    <div id="about" class="about">
+    <div id="about" class="main-section">
       <p>
         I'm a first-year math and computer science student at UC San Diego, a software engineer intern at General Atomics, and a research intern at Scripps Research.
         I'm interested in web development and AI. :)
       </p>
-      <h3 id="languages-header">Languages:</h3>
+      <h3 id="languages-header">Languages</h3>
       <div id="languages-content" class="skills">  
         <p class="tag">JavaScript</p>
         <p class="tag">Python</p>
@@ -67,7 +71,7 @@
         <p class="tag">CSS</p>
       </div>
       <br/>
-      <h3 id="tools-header">Tools and Frameworks:</h3>
+      <h3 id="tools-header">Tools and Frameworks</h3>
       <div id="tools-content" class="skills">  
         <p class="tag">React.js</p>
         <p class="tag">Node.js</p>
@@ -80,7 +84,7 @@
       </div>
 
     </div>
-   <div id="experience" class="experience">
+   <div id="experience" class="main-section">
       <h2>Experience</h2>
       <div class="boxes">
         <div class="box">
@@ -126,7 +130,7 @@
         </div>
       </div>
    </div>
-   <div id="projects" class="projects">
+   <div id="projects" class="main-section">
     <h2>Projects</h2>
     <div class="boxes">
       <a class="box" href="https://github.com/jenetic/licensify" target="_blank">
@@ -192,10 +196,10 @@
       </a>
     </div>
    </div>
-   <div id="education" class="education">
+   <div id="education" class="main-section">
     <h2>Education</h2>
     <div class="boxes">
-      <div class="top-box">
+      <div class="summary">
         <h3>University of California San Diego, 2021-2025</h3>
         <p class="major">B.S. Mathematics—Computer Science</p>
       </div>

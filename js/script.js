@@ -11,3 +11,13 @@ const typeEffect = (content, speed) => {
   }, speed)
 }
 typeEffect("Hi! I'm Jenny.", 120); 
+
+// Dark mode toggle
+const toggleColorScheme = () => {
+  let body = document.body;
+  if (body.className === "dark") {
+    body.className = "light";
+  } else {
+    body.className = "dark";
+  }
+}
