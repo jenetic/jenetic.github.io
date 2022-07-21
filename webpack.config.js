@@ -6,7 +6,7 @@ const isProduction = process.argv[process.argv.indexOf('--mode') + 1] === 'produ
 module.exports = {
   mode: 'development',
   entry: {
-    main: path.resolve(__dirname, './src/index.js')
+    main: path.resolve(__dirname, './src/index.ts')
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -26,6 +26,10 @@ module.exports = {
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       { test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, type:'asset/resource', },
       { test: /\.html$/i, loader: 'html-loader'},
+      { test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       { test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -36,6 +40,9 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({

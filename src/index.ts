@@ -1,11 +1,16 @@
 import './main.css';
-// import portrait from './assets/images/protrait.png';
+
+declare global {
+  interface Window {
+    toggleColorScheme: any;
+  }
+}
 
 // Typewriter Effect
-const typeEffect = (content, speed) => {
+const typeEffect = (content: string, speed: number): void => {
   let i = 0;
   let text = content;
-  let interval = setInterval(function(){
+  let interval: NodeJS.Timer = setInterval(function(){
       document.getElementById("name").innerHTML += content.charAt(i);
       i++;
       if (i >= text.length) {
@@ -15,7 +20,7 @@ const typeEffect = (content, speed) => {
 }
 
 // Dark mode toggle
-const toggleColorScheme = (onload=false) => {
+const toggleColorScheme = (onload: boolean = false): void => {
   let body = document.body;
   let button = document.getElementById("toggle-color-scheme");
 
