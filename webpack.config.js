@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const isProduction = process.argv[process.argv.indexOf('--mode') + 1] === 'production';
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -12,7 +14,7 @@ module.exports = {
     assetModuleFilename: '[name][ext]',
     clean: true,
   },
-  devtool: 'inline-source-map',
+  devtool: isProduction ? false : 'inline-source-map',
   devServer: {
     static: path.resolve(__dirname, 'src'),
     port: 3000,
@@ -36,7 +38,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Demo',
+      title: 'Jenny Lam',
       filename: 'index.html',
       template: path.resolve(__dirname, './src/index.html'),
     }),
