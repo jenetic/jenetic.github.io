@@ -10,7 +10,7 @@ declare global {
 const typeEffect = (content: string, speed: number): void => {
   let i = 0;
   let text = content;
-  let interval: NodeJS.Timer = setInterval(function(){
+  let interval = setInterval(function(){
       document.getElementById("name").innerHTML += content.charAt(i);
       i++;
       if (i >= text.length) {
