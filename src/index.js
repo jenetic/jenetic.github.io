@@ -1,3 +1,5 @@
+import './main.css';
+
 // Typewriter Effect
 const typeEffect = (content, speed) => {
   let i = 0;
@@ -12,11 +14,11 @@ const typeEffect = (content, speed) => {
 }
 
 // Dark mode toggle
-const toggleColorScheme = (load=false) => {
+const toggleColorScheme = (onload=false) => {
   let body = document.body;
   let button = document.getElementById("toggle-color-scheme");
 
-  if (load) {
+  if (onload) {
     if (localStorage.getItem("color-scheme") === null) {
       localStorage.setItem("color-scheme", "light");
       button.textContent = "Toggle Dark Mode";
@@ -36,6 +38,9 @@ const toggleColorScheme = (load=false) => {
   }
   body.className = localStorage.getItem("color-scheme");
 }
+
+// Do stuff
+window.toggleColorScheme = toggleColorScheme; // to make button work
 
 typeEffect("Hi! I'm Jenny.", 120); 
 toggleColorScheme(true);
