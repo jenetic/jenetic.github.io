@@ -17,7 +17,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
 
   <script src="https://kit.fontawesome.com/f2d3412016.js" crossorigin="anonymous"></script>
-  <title>Jenny Lam</title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="light">
   <aside>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div id="toggle-color-scheme-container">
-        <button id="toggle-color-scheme" onclick="toggleColorScheme()">Dark Mode</button>
+        <button id="toggle-color-scheme" onclick="toggleColorScheme()">Toggle Dark Mode</button>
       </div>
     </div>
   </aside>
