@@ -1,4 +1,4 @@
-# Personal Website
-Personal website made with HTML, CSS, and JavaScript (in progress).
+# jenetic.github.io
+Personal website made with HTML, CSS, and JavaScript
 
-Check it out at: [jenetic.github.io](https://jenetic.github.io/)
+Check it out at [jenetic.github.io](https://jenetic.github.io/)
