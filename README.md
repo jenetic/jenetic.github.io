@@ -13,4 +13,7 @@ $ npm run dev
 
 # Bundle files for production
 $ npm run build
+
+# Deploy
+$ npm run deploy
 ```
