@@ -13,15 +13,16 @@
 }
 
 .light {
-  --bg1:rgb(239, 236, 255);
-  --bg2:#d5d5ff;
-  --box-hover:rgb(170, 170, 255);
+  --bg1:rgb(255, 255, 255);
+  --bg2:#ffffff;
+  --box-hover:#dddffd;
   --header:#eb6955;
   --link:#e94813;
-  --text:#363a59;
-  --tag: #b8b7fb;
+  --text:#4b5071;
+  --tag: #eeefff;
+  --border: #dddffd;
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body {
@@ -36,12 +37,13 @@ body {
 h1 {
   padding: 0.5rem 0rem 0rem 1rem;
   color: var(--header);
+  font-size: 2rem;
 }
 
 h2 {
-  /* margin: 1rem 0rem; */
   padding: 0;
   color: var(--header);
+  font-size: 1.7rem;
 }
 
 h3 {
@@ -91,6 +93,13 @@ i {
   margin: 0rem 0.6rem 0rem 0rem;
 }
 
+p {
+  line-height: 1.2;
+}
+
+.light p {
+  line-height: 1.4;
+}
 /* TAGS */
 
 .tag {
@@ -153,7 +162,7 @@ i {
 
 /* MAIN */
 .main-section {
-  margin: 0rem 0rem;
+  margin: 1rem 0rem;
   padding: 0rem 1rem;
 }
 
@@ -189,7 +198,6 @@ i {
   grid-area: school;
   margin: 0.2rem;
   padding: 0rem 1rem;
-  color: var(--header);
 }
 
 #education .summary p {
@@ -197,6 +205,7 @@ i {
 }
 
 #education .box {
+  border: solid 1px var(--border);
   overflow-wrap: normal;
   background: var(--bg2);
   border-radius: 0.5rem;
@@ -217,7 +226,7 @@ i {
 #education .box ul li {
   margin: 0rem -1rem;
   padding: 0.6rem 1rem;
-  border-bottom: 0.7px solid var(--text);
+  border-bottom: 0.7px solid var(--border);
 }
 
 #education .boxes .box ul .first {
@@ -236,6 +245,7 @@ i {
 
 #experience .box {
   background: var(--bg2);
+  border: solid 1px var(--border);
   border-radius: 0.6rem;
   margin: 0.5rem 0rem 0.5rem;
   padding: 0.5rem 1.2rem;
@@ -273,6 +283,7 @@ i {
 #projects .box {
   background: var(--bg2);
   border-radius: 0.5rem;
+  border: solid 1px var(--border);
   margin: 0.5rem 0.4rem;
   padding: 0.6rem;
   text-align: center;
