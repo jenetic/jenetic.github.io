@@ -1,3 +1,14 @@
-#about-me {
+#navbar {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+#about {
   display: flex;
+}
+
+#about-right {
+  display: flex;
+  flex-direction: column;
 }
