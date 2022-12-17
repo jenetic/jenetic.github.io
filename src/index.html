@@ -21,96 +21,120 @@
 </head>
 <body>
   <div id="navbar">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="https://www.linkedin.com/in/jwny" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/jenetic" target="_blank"><i class="fab fa-github"></i></a>
-  </div>
-  <h1>Hi! I'm Jenny.</h1>
-  <p>B.S. Mathematics-Computer Science | UCSD 2025</p>
-  <div id="about">
     <div>
-      <p>
-        I'm a 2nd-year Math and Computer Science student at UC San Diego interested in 
-        software engineering. I have experience in full-stack web development and data processing & analysis.
-        I also like to draw.
-      </p>
-      <p>
-        Currently, I'm... 
-        <ul>
-          <li>Developing scripts to analyze 200+ mice behavioral experiment videos at Scripps Research.</li>
-          <li>Designing and developing a user-friendly configuration file generator web app for epidemic simulation at the Niema Moshiri Lab at UCSD.</li>
-        </ul>
-      </p>
-      <p>
-        Previously, I... 
-        <ul>
-          <li>Improved a CNN-based radar image classification model by 33% in test loss and 1.2% in accuracy at General Atomics.</li>
-          <li>Created a full-stack web app to find and review college study locations at Google Software Product Sprint.</li>
-          <li>Analyzed 2.5+ million COVID-19 cases and developed a COVID-19 mutation look-up table at Stanford University.</li>
-        </ul>
-      </p>
-      <p>I'm currently seeking internship opportunities in software engineering! Contact me at jznnylam(at)gmail(dot)com.</p>
-    </div>
-    <div id="about-right">
-      <img src="assets/images/portrait.png" height="300px"/>
-      <span><i class="fas fa-envelope"></i>jznnylam (at) gmail (dot) com</span>
-      <a href="https://www.linkedin.com/in/jwny" target="_blank"><i class="fab fa-linkedin-in"></i>Jenny L.</a>
-      <a href="https://github.com/jenetic" target="_blank"><i class="fab fa-github"></i>jenetic</a>
+      <a class="name" href="#about">jenny l.</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="https://www.linkedin.com/in/jwny" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/jenetic" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </div>
+  <main>
+    <div id="about">
+      <div class="left">
+        <div>
+          <h1>Hi! I'm Jenny.</h1>
+          <p>
+            I'm a 2nd-year Math and Computer Science student at UC San Diego interested in 
+            software engineering. I have experience in full-stack web development and data processing & analysis.
+            I also like to draw.
+          </p>
+          <p>I'm currently seeking internship opportunities in software engineering! Contact me at jznnylam(at)gmail(dot)com.</p>
+          <div id="skills">
+            <div>
+              <p>Languages: Python, JavaScript, HTML, CSS, Java</p>
+              <p>Tools and Frameworks: React.js, Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img id="portrait" src="assets/images/portrait.png"/>
+        <div class="text">
+          <p>B.S. Mathematics-Computer Science at UCSD, 2021-2025</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="experience">
+      <h2>Experience</h2>
+      <div class="box">
+        <p class="date">Sep 2022 - Present</p>
+        <div class="header">
+          <div>
+            <img src="assets/images/logos/ucsd_cse.png"/>
+          </div>
+          <div class="text">
+            <h3>UCSD Computer Science & Engineering - Niema Moshiri Lab</h3>
+            <p>Undergraduate Researcher</p>
+          </div>
+        </div>
+        <p class="description">I'm designing and developing a user-friendly configuration file generator web application in a team of 4 for FAVITES-Lite, a framework for viral transmission and evolution simulation.</p>
+      </div>
+      <div class="box">
+        <p class="date">Jun 2022 - Aug 2022</p>
+        <div class="header">
+          <div>
+            <img src="assets/images/logos/general_atomics.png"/>
+          </div>
+          <div class="text">
+            <h3>General Atomics Aeronautical Systems</h3>
+            <p>Software Engineer Intern</p>
+          </div>
+        </div>
+        <p class="description">I extracted, analyzed, and integrated metadata from 500+ radar videos into a CNN-based radar classification algorithm to improve test loss by 33% and accuracy by 1.2%. The model will be deployed in several countries for maritime patrol.</p>
+      </div>
+      <div class="box">
+        <p class="date">Nov 2021 - Present</p>
+        <div class="header">
+          <div>
+            <img src="assets/images/logos/scripps.jpg"/>
+          </div>
+          <div class="text">
+            <h3>Scripps Research</h3>
+            <p>Research Intern</p>
+          </div>
+        </div>
+        <p class="description">I analyzed 200+ mice behavioral experiment videos to quantify and gain insight on mice social behavior by extracting, processing, and creating visualizations of mice movement data.</p>
+      </div>
+      <div class="box">
+        <p class="date">Jun 2021 - Aug 2021</p>
+        <div class="header">
+          <div>
+            <img src="assets/images/logos/stanford.jpg"/>
+          </div>
+          <div class="text">
+            <h3>Stanford University</h3>
+            <p>Research Intern</p>
+          </div>
+        </div>
+        <p class="description">I created a comprehensive k-mer mutation table of COVID-19's virus for efficient lookup. I also analyzed 2.5+ million COVID-19 cases, identifying several trends in its variants of concerns.</p>
+      </div>
+    </div>
   
-  <div id="skills">
-    <div>
-      <p>Languages: Python, JavaScript, HTML, CSS, Java</p>
-      <p>Tools and Frameworks: React.js, Git</p>
+    <h2 id="projects">Projects</h2>
+    <div id="projects-list">
+      <div class="box">
+          <p class="date">Jul 2022</p>
+          <h3>Licensify</h3>
+          <p class="description">Description here  sdf s df sdf sd f sffk shfks hjfk hsnhfjk snjkfsk jnfsd</p>
+      </div>
+      <div class="box">
+        <p class="date">Apr 2022</p>
+        <h3>Ecoshower</h3>
+        <p class="description">Description here  sdf s df sdf sd f sffk shfk shjfk hsnhfjk snjkfs kjnfsd</p>
+      </div>
+      <div class="box">
+        <p class="date">Apr 2022</p>
+        <h3>Study Budz</h3>
+        <p class="description">Description here  sdf s df sdf sd f sffks h fkshjfk hsnhfjk snjkfs kjnfsd</p>
+      </div>
+      <div class="box">
+        <p class="date">Dec 2021</p>
+        <h3>Daily Dollars</h3>
+        <p class="description">Description here  sdf s df sdf sd f sffks hfks hjfk hsnhfjk snjkfs kjnfsd</p>
+      </div>
     </div>
-  </div>
-
-  <div id="experience">
-    <h2>Experience</h2>
-    <div class="box">
-      <h3>UCSD Computer Science & Engineering Department - Niema Moshiri Lab</h3>
-      <p>Undergraduate Researcher | Sep 2022 - Present</p>
-      <p>I'm designing and developing a user-friendly configuration file generator web application in a team of 4 for FAVITES-Lite, a framework for viral transmission and evolution simulation.</p>
-    </div>
-    <div class="box">
-      <h3>General Atomics Aeronautical Systems</h3>
-      <p>Software Engineer Intern | Jun 2022 - Aug 2022</p>
-      <p>I extracted, analyzed, and integrated metadata from 500+ radar videos into a CNN-based radar classification algorithm to improve test loss by 33% and accuracy by 1.2%. The model will be deployed in several countries for maritime patrol.</p>
-    </div>
-    <div class="box">
-      <h3>Scripps Research</h3>
-      <p>Research Intern | Nov 2021 - Present</p>
-      <p>I analyzed 200+ mice behavioral experiment videos to quantify and gain insight on mice social behavior by extracting, processing, and creating visualizations of mice movement data.</p>
-    </div>
-    <div class="box">
-      <h3>Stanford University</h3>
-      <p>Research Intern | Jun 2021 - Aug 2021</p>
-      <p>I created a comprehensive k-mer mutation table of COVID-19's virus for efficient lookup. I also analyzed 2.5+ million COVID-19 cases, identifying several trends in its variants of concerns.</p>
-    </div>
-  </div>
-
-  <h2>Projects</h2>
-  <div id="projects">
-    <div class="box">
-      <p>Licensify</p>
-      <p>Description here  sdf s df sdf sd f sffkshfkshjfk hsnhfjk snjkfskjnfsd</p>
-    </div>
-    <div class="box">
-      <p>Ecoshower</p>
-      <p>Description here  sdf s df sdf sd f sffkshfkshjfk hsnhfjk snjkfskjnfsd</p>
-    </div>
-    <div class="box">
-      <p>Study Budz</p>
-      <p>Description here  sdf s df sdf sd f sffkshfkshjfk hsnhfjk snjkfskjnfsd</p>
-    </div>
-    <div class="box">
-      <p>Daily Dollars</p>
-      <p>Description here  sdf s df sdf sd f sffkshfkshjfk hsnhfjk snjkfskjnfsd</p>
-    </div>
-  </div>
-
+  </main>
 </body>
 </html>
