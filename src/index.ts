@@ -13,4 +13,4 @@ const typeEffect = (content: string, speed: number): void => {
   }, speed)
 }
 
-typeEffect("Hi! I'm Jenny.", 120);
+// typeEffect("Hi! I'm Jenny.", 120);

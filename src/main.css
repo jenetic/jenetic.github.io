@@ -22,7 +22,7 @@
   --highlighted-text: var(--gray-0);
   --text: var(--gray-1);
   --subtext: var(--gray-2);
-  --link: var(--purple);
+  --link: var(--pink);
   --link-hover: var(--yellow);
   --monospace: Menlo, Monaco, monospace, monospace;
   --border: solid var(--gray-3) 1px;
@@ -260,7 +260,7 @@ a:hover {
 
 @media (max-width: 500px) {
   main {
-    margin: 0.7rem;
+    margin: 0.7rem 2rem;
   }
 
   #navbar a {
