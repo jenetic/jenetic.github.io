@@ -1,4 +1,17 @@
 import './main.css';
+import {
+  hashRoute
+} from './router';
+
+document.addEventListener("click", (e) => {
+  const {target}: any = e;
+  if (!target.matches("nav a")) {
+      return;
+  }
+  console.log("d???");
+  e.preventDefault();
+  hashRoute(); 
+})
 
 // Typewriter Effect
 const typeEffect = (content: string, speed: number): void => {
