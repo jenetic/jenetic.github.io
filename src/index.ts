@@ -1,4 +1,6 @@
 import './main.css';
+import './about.css';
+
 import {
   hashRoute
 } from './router';

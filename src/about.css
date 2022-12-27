@@ -1,0 +1,18 @@
+.club {
+  margin: 1rem 0;
+  display: flex;
+}
+
+#about .club img {
+  margin-right: 1rem;
+  width: 4rem;
+  height: auto;
+  object-fit: contain;
+}
+
+#about .club svg {
+  width: 4rem;
+  margin-right: 1rem;
+  height: auto;
+  object-fit: contain;
+}
