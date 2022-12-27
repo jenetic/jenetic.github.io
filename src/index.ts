@@ -3,14 +3,14 @@ import {
   hashRoute
 } from './router';
 
+
+// SPA routing
 document.addEventListener("click", (e) => {
   const {target}: any = e;
-  if (!target.matches("nav a")) {
-      return;
+  if (target.matches(".route")) {
+    e.preventDefault();
+    hashRoute(); 
   }
-  console.log("d???");
-  e.preventDefault();
-  hashRoute(); 
 })
 
 // Typewriter Effect

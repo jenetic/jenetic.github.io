@@ -2,17 +2,7 @@
 
 const pageTitle = "Jenny L."
 
-// document.addEventListener("click", (e) => {
-//     const {target} = e;
-//     if (!target.matches("nav a")) {
-//         return;
-//     }
-//     console.log("d???");
-//     e.preventDefault();
-//     hashRoute(); 
-// })
-
-const routes = {
+const routes: any = {
     404: {
         template: "/pages/404.html",
         title: "404 | " + pageTitle,
@@ -30,14 +20,14 @@ const routes = {
     },
 }
 
-export const hashRoute = (event) => {
+export const hashRoute = (event?: any) => {
     event = event || window.event;
     event.preventDefault();
     window.history.pushState({}, "", event.target.href);
     locationHandler();
 }
 
-const locationHandler = async () => {
+export const locationHandler = async () => {
     let location = window.location.hash.replace("#", "");
     if (location.length == 0) {
         location = "/";
@@ -45,7 +35,6 @@ const locationHandler = async () => {
     const route = routes[location] || routes[404];
     const html = await fetch(route.template).then((response) =>
         response.text());
-    console.log("dddsdss");
     document.getElementById("content").innerHTML = html; 
     document.title = route.title;
     document
@@ -53,7 +42,4 @@ const locationHandler = async () => {
         .setAttribute("content", route.description);
 }
 
-window.addEventListener("hashchange", locationHandler);
 locationHandler();
-
-console.log("dds");

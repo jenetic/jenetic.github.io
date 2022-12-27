@@ -5,7 +5,8 @@
   --gray-1: #BBC4DD;
   --gray-2: #7689BC;
   --gray-3: #1d263b;
-  --gray-4: #0F162E;
+  /* --gray-4: #10172d; */
+  --gray-4: #13152b;
   --gray-5: #0A0F1F;
 
   --yellow: #ffbf57;
@@ -82,6 +83,7 @@ a {
 
 a:hover {
   color: var(--link-hover);
+  text-decoration: underline;
 }
 
 .hidden {
@@ -111,6 +113,7 @@ a:hover {
 
 .project-name a:hover {
   color: var(--link-hover);
+  text-decoration: underline;
 }
 
 #navbar {
@@ -153,32 +156,33 @@ a:hover {
   animation: cursor-blink 1.5s steps(2) infinite;
 }
 
-#about {
+#intro {
   display: flex;
   margin: 3rem auto;
 }
 
-#about p {
+#intro p {
   margin: 1rem 0;
   color: var(--text);
 }
 
-#about a {
+#intro a {
   color: var(--link);
 }
 
-#about a:hover {
+#intro a:hover {
   color: var(--link-hover);
+  text-decoration: underline;
 }
 
-#about .left {
+#intro .left {
   padding-right: 2rem;
   display: flex; 
   flex-direction: column;
   justify-content: center;
 }
 
-#about .right {
+#intro .right {
   display: flex;
   flex-direction: column;
 }
@@ -225,6 +229,7 @@ a:hover {
 
 #experience a:hover {
   color: var(--link-hover);
+  text-decoration: underline;
 }
 
 #projects-list {
