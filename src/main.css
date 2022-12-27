@@ -144,18 +144,6 @@ a:hover {
   color: var(--link);
 }
 
-#title-wrapper {
-  display: flex;
-  justify-content: flex-start;
-}
-
-#cursor {
-  margin-left: 1rem;
-  border-right: 6px solid var(--subtext);
-  display: inline-block;
-  animation: cursor-blink 1.5s steps(2) infinite;
-}
-
 #intro {
   display: flex;
   margin: 3rem auto;

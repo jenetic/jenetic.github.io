@@ -11,7 +11,7 @@ const routes: any = {
     "/": {
         template: "/pages/index.html",
         title: "Home | " + pageTitle,
-        description: "this is the homepage"
+        description: "This is the homepage"
     },
     about: {
         template: "/pages/about.html",
