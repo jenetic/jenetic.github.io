@@ -9,7 +9,7 @@ module.exports = {
     main: path.resolve(__dirname, './src/ts/index.ts')
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: '[name].[contenthash].js',
     assetModuleFilename: '[name][ext]',
     clean: true,
