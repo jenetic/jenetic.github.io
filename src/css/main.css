@@ -3,17 +3,18 @@
 :root {
   --gray-0: #F2F3F8;
   --gray-1: #BBC4DD;
-  --gray-2: #7689BC;
-  --gray-3: #1d263b;
-  /* --gray-4: #10172d; */
-  --gray-4: #13152b;
+  --gray-2: #8392bd;
+  --gray-3: #20283b;
+  --gray-3: #272b36;
+  --gray-4: #1c1c2b;
   --gray-5: #0A0F1F;
 
   --yellow: #ffbf57;
   --orange: rgb(239, 123, 100);
   --blue: #02bcf5;
-  --pink: #f56d9f;
-  --purple: #7f78ff;
+  --pink: #fb82ae;
+  --purple: #8f93ff;
+  --green: rgb(77, 212, 89);
 }
 
 :root {
@@ -23,8 +24,8 @@
   --highlighted-text: var(--gray-0);
   --text: var(--gray-1);
   --subtext: var(--gray-2);
-  --link: var(--pink);
-  --link-hover: var(--yellow);
+  --link: var(--yellow);
+  --link-hover: var(--purple);
   --monospace: Menlo, Monaco, monospace, monospace;
   --border: solid var(--gray-3) 1px;
 }
@@ -67,7 +68,7 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--link);
 }
 
 a:hover {
@@ -236,7 +237,7 @@ li {
 }
 
 #projects-list h3 {
-  margin-bottom: 0.2rem;
+  margin: 0 auto 0.2rem;
 }
 
 #projects-list .box {
@@ -247,6 +248,26 @@ li {
   border: var(--border);
 }
 
+.club {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.club img {
+  margin-right: 1rem;
+  width: 4rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.club svg {
+  width: 4rem;
+  margin-right: 1rem;
+  height: auto;
+  object-fit: contain;
+}
+
+
 @media (min-width: 1024px) {
   main {
     margin: auto 15%;
@@ -254,10 +275,6 @@ li {
 
   #navbar {
     justify-content: flex-start;
-  }
-
-  #about .left {
-    padding-right: 4rem;
   }
 }
 
@@ -270,11 +287,11 @@ li {
     margin: 0 0.3rem;
   }
 
-  #about {
+  #intro {
     display: block;
   }
 
-  #about .right {
+  #intro .right {
     margin-top: 2rem;
   }
 

@@ -5,17 +5,17 @@ const pageTitle = "Jenny L."
 const routes: any = {
     404: {
         template: "/pages/404.html",
-        title: "404 | " + pageTitle,
+        title: pageTitle + " | 404",
         description: "Page not found"
     },
     "/": {
         template: "/pages/index.html",
-        title: "Home | " + pageTitle,
+        title: pageTitle,
         description: "This is the homepage"
     },
     about: {
         template: "/pages/about.html",
-        title: "About | " + pageTitle,
+        title: pageTitle + " | About",
         description: "About me"
     },
 }

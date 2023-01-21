@@ -6,7 +6,7 @@ const isProduction = process.argv[process.argv.indexOf('--mode') + 1] === 'produ
 module.exports = {
   mode: 'development',
   entry: {
-    main: path.resolve(__dirname, './src/index.ts')
+    main: path.resolve(__dirname, './src/ts/index.ts')
   },
   output: {
     path: path.join(__dirname, 'dist'),
