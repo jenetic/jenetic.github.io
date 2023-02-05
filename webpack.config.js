@@ -9,7 +9,6 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/pages/${name}.html`, // relative path to the HTML files
     filename: `./pages/${name}.html`, // output HTML files
-    chunks: [`${name}`] // respective JS files
   })
 });
 
