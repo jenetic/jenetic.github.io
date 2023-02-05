@@ -9,7 +9,7 @@ const routes: any = {
         description: "Page not found"
     },
     "/": {
-        template: "/pages/index.html",
+        template: "/pages/home.html",
         title: pageTitle,
         description: "This is the homepage"
     },

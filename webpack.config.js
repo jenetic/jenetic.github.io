@@ -3,6 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isProduction = process.argv[process.argv.indexOf('--mode') + 1] === 'production';
 
+// Multiple HTML pages
+let htmlPageNames = ['404', 'about', 'home'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/pages/${name}.html`, // relative path to the HTML files
+    filename: `./pages/${name}.html`, // output HTML files
+    chunks: [`${name}`] // respective JS files
+  })
+});
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -13,6 +23,7 @@ module.exports = {
     filename: '[name].[contenthash].js',
     assetModuleFilename: '[name][ext]',
     clean: true,
+    publicPath: '/'
   },
   devtool: isProduction ? false : 'inline-source-map',
   devServer: {
@@ -51,5 +62,5 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(__dirname, './src/index.html'),
     }),
-  ],
+  ].concat(multipleHtmlPlugins),
 };
