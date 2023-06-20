@@ -143,13 +143,12 @@ li {
 }
 
 #title {
-  margin-top: 0;
+  margin: 3rem 0 0.5rem;
   font-size: 3rem;
 }
 
 #intro {
   display: flex;
-  margin: 3rem auto;
 }
 
 #intro p {
@@ -176,6 +175,7 @@ li {
 #intro .right {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #skills p {
@@ -265,7 +265,6 @@ li {
   object-fit: contain;
 }
 
-
 @media (min-width: 1024px) {
   main {
     margin: auto 15%;
@@ -276,13 +275,19 @@ li {
   }
 }
 
+@media (max-width: 609px) {
+  #intro {
+    display: block;
+  }
+
+  #intro .right {
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 500px) {
   main {
     margin: 0.7rem 2rem;
-  }
-
-  #navbar a {
-    margin: 0 0.3rem;
   }
 
   #intro {
