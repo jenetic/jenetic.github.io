@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const isProduction = process.argv[process.argv.indexOf('--mode') + 1] === 'production';
 
 // Multiple HTML pages
-let htmlPageNames = ['404', 'about', 'home'];
+let htmlPageNames = ['404', 'home'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/pages/${name}.html`, // relative path to the HTML files

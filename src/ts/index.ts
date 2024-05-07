@@ -1,5 +1,4 @@
 import '../css/main.css';
-import '../css/about.css';
 import '../css/404.css';
 import '../css/home.css';
 

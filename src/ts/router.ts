@@ -12,12 +12,7 @@ const routes: any = {
         template: "/pages/home.html",
         title: pageTitle,
         description: "This is the homepage"
-    },
-    about: {
-        template: "/pages/about.html",
-        title: pageTitle + " | About",
-        description: "About me"
-    },
+    }
 }
 
 export const hashRoute = (event?: any) => {
